@@ -3,11 +3,11 @@
 body {
   margin: 0;
   color: #595959;
-    background-color: rgb(162, 210, 255);
+  background-color: rgb(162, 210, 255);
 }
 
-.main-text{
-    }
+.main-text {
+}
 
 .navbar {
   font-family: Mulish;
@@ -32,100 +32,129 @@ body {
   text-decoration: none;
   padding: 6px;
   font-weight: bold;
-    transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .navbar a:hover {
   color: #333533;
 }
 
-main{
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 10%;
-max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+main {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
-.skill-card-list{
-    list-style: none;
-    padding: 0;
-    flex-wrap: wrap;
-    display: flex;
+.skill-card-list {
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+  display: flex;
 }
 
-.skill-card{
-    width: 30%;
-    padding: 10px;
-    margin: 10px auto;
-    background-color: rgba(255, 255, 255, 0.5);
+.skill-card {
+  width: 30%;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (max-width: 767px) {
-    .skill-card{
-        width: 50%;
-    }
+  .skill-card {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 479px) {
-    .skill-card{
-        width: 100%;
-    } 
-}
-
-.grass-container-front{
-    position: fixed;
-    bottom: 0px;
-    left: 0;
-    width: 150%;
-    height: 250px;
-    background-image: url('../img/SVG/grass/grass_main_front.svg');
-    background-repeat: repeat-x;
-    background-size: 250px;
-    z-index: -1;
-    transition: bottom 0.6s ease-out;
-}
-
-.grass-container-middle{
-    position: fixed;
-    bottom: 100px;
-    left: 0;
+  .skill-card {
     width: 100%;
-    height: 200px;
-    background-image: url('../img/SVG/grass/grass_main_center.svg');
-    transition: bottom 0.6s ease-out;
-    background-size: 200px;
-    background-repeat: repeat-x;
+  }
 }
 
-.grass-front-bg{
-    position: fixed;
-    bottom: 0px;
-    left: 0;
-    width: 150%;
-    height: 70px;
-    z-index: -1;
-    background-color: rgb(128, 185, 24);
-    transition: bottom 0.6s ease-out;
+.grass-container-front {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 150%;
+  height: 250px;
+  background-image: url("../img/SVG/grass/grass_main_front.svg");
+  background-repeat: repeat-x;
+  background-size: 250px;
+  z-index: -1;
+  transition: bottom 0.6s ease-out;
 }
 
-#middle-grass{
-    position: fixed;
-    width: fit-content;
-    height: fit-content;
-    z-index: -2;
+.grass-container-middle {
+  position: fixed;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/SVG/grass/grass_main_center.svg");
+  transition: bottom 0.6s ease-out;
+  background-size: 200px;
+  background-repeat: repeat-x;
 }
 
-.grass-middle-bg{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 150px;
-    background-color: rgb(170, 204, 0);
-    transition: bottom 0.6s ease-out;
+#back-grass {
+  position: fixed;
+  width: fit-content;
+  height: fit-content;
+  z-index: -3;
 }
 
-#inner-grass-main{
-    fill: rgba(128, 185, 24, 0.8);
+.grass-container-back {
+  position: fixed;
+  bottom: 200px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/SVG/grass/grass_main_back.svg");
+  transition: bottom 0.6s ease-out;
+  background-size: 150px;
+  background-repeat: repeat-x;
+}
+
+.grass-front-bg {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 150%;
+  height: 70px;
+  z-index: -1;
+  background-color: rgb(128, 185, 24);
+  transition: bottom 0.6s ease-out;
+}
+
+#middle-grass {
+  position: fixed;
+  width: fit-content;
+  height: fit-content;
+  z-index: -2;
+}
+
+.grass-middle-bg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(170, 204, 0);
+  transition: bottom 0.6s ease-out;
+}
+
+.grass-back-bg{
+   position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(212, 215, 0);
+  transition: bottom 0.6s ease-out;   
+}
+
+#inner-grass-main {
+  fill: rgba(128, 185, 24, 0.8);
 }
