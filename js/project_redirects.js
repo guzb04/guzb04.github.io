@@ -12,4 +12,5 @@ document.addEventListener("DOMContentLoaded", () => {
     portfolio.addEventListener("click", ()=>{
         window.location.href = "../projects/portfolio.html";
     });
+    
 });
