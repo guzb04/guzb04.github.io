@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h1>guzb04</h1>
+      <div class="links">
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../certificates.html">Certificates</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="main-text">
+        <h1>Crypted</h1>
+        <div class="row">
+          <img
+            src="../img/projects/crypted.png"
+            class="project-big-image col-md-6 col-sm-12"
+          />
+          <p class="col-md-6 col-sm-12">
+            This is most likely my biggest solo project, or at least it felt
+            like it back when I was doing it.
+          </p>
+        </div>
+        <p>
+          The main idea is that the user uploads a zip file to the left box and
+          generates a key using a button that asks for a key in the back-end.
+          This key is randomly generated each time. This returns a json file
+          with encrypted binary data and an IV (initialization vector) attached
+          to it in the last entry of the json array. Lastly the user (or a
+          different user who has the file) uploads it to the right box with the
+          original key to reconstruct the zip file!
+        </p>
+        <p>
+          My focus was to make something "useful", I didn't pay much attention
+          to the front-end as it was not the focus of Crypted at all. The magic
+          happens in the back-end.
+        </p>
+        <p>
+          The front-end was made with react, the back-end was made with the
+          express framework on node.js. I did not use any kind of database for
+          this project because to my mind, there was no need to store permanent
+          information.
+        </p>
+      </div>
+      <div class="project-links">
+        <h3>Links:</h3>
+        <a href="https://github.com/gyzb04/crypted">Github</a>
+      </div>
+    </main>
+
+    <div class="sun"></div>
+
+    <div class="moon moon-transition"></div>
+
+    <div class="all-grass">
+      <div class="grass-container-front"></div>
+      <div class="grass-front-bg"></div>
+      <div id="middle-grass">
+        <div class="grass-container-middle"></div>
+        <div class="grass-middle-bg"></div>
+      </div>
+      <div id="back-grass">
+        <div class="grass-container-back"></div>
+        <div class="grass-back-bg"></div>
+      </div>
+    </div>
+
+    <script
+      src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/Background/background_scroll.js"></script>
+  </body>
+</html>
