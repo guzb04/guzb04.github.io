@@ -1,0 +1,76 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>guzb04</h1>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="certificates.html">Certificates</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="main-text">
+            <h2>Projects</h2>
+            <br />
+            <h3>Click one to see more info</h3>
+
+            <ul class="project-cards">
+                <li class="card project-card" id = "emercado-card">
+                    <div class="card-body">
+                        <img src="img/projects/emercado.png" class="card-img-top" />
+                        <h4 class="card-title">E-commerce site</h4>
+                        <p class="card-text">
+                            I took part in this project together with a big team. I mostly did
+                            Javascript, Node.js and SQL. The front end was vanilla Javascript
+                            + Bootstrap and the backend was made using the express framework
+                        </p>
+                    </div>
+                </li>
+                <li class="card project-card" id = "crypted-card">
+                    <div class="card-body">
+                        <img src="img/projects/crypted.png" class="card-img-top" />
+                        <h4 class="card-title">Crypted</h4>
+                        <p class="card-text">
+                            This solo project was made as a way to face new challenges. It's a
+                            zip file encrypter built on Node.js and express with a very simple
+                            React front-end. It took me quite some time but,I enjoyed doing
+                            something new
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <div class="sun"></div>
+
+    <div class="moon moon-transition"></div>
+
+    <div class="all-grass">
+        <div class="grass-container-front"></div>
+        <div class="grass-front-bg"></div>
+        <div id="middle-grass">
+            <div class="grass-container-middle"></div>
+            <div class="grass-middle-bg"></div>
+        </div>
+        <div id="back-grass">
+            <div class="grass-container-back"></div>
+            <div class="grass-back-bg"></div>
+        </div>
+    </div>
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./js/Background/background_scroll.js"></script>
+    <script src="./js/project_redirects.js"></script>
+</body>

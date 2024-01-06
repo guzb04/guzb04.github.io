@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap");
+
+body {
+  margin: 0;
+  color: #333533;
+  background-color: #00b4d8;
+    transition: background-color 0.5s;
+}
+
+.moon{
+    position: fixed;
+    bottom: 70%;
+    left: 10%;
+    width: 100px;
+    transition: transform 0.5s ease-in-out;
+    height: 100px;
+    z-index: -5;
+    background-image: url('../img/SVG/moon.svg');
+    background-size: 100px;
+    transition: bottom 1.5s ease;
+}
+
+.moon-transition{
+    bottom: 0;
+    animation: rotateAnimation 1s linear infinite;
+}
+
+.socials{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.sun {
+    position: fixed;
+    bottom: 70%;
+    transition: transform 0.5s ease-in-out;
+    right: 10%;
+    width: 100px;
+    height: 100px;
+    z-index: -5;
+    background-image: url('../img/SVG/sun.svg');
+    background-size: 100px;
+    transition: bottom 1.5s ease;
+}
+
+.sun-transition{
+    bottom: 0;
+    animation: rotateAnimation 1s linear infinite;
+}
+
+.all-grass div{
+    transition: filter 0.5s;
+}
+.navbar {
+  font-family: Mulish;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar h1 {
+  color: #333533;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  font-weight: bold;
+  transition: color 0.5s;
+}
+
+.navbar a:hover {
+  color: #333533;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+    font-family: Mulish;
+}
+
+.skill-card-list {
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.skill-card {
+  width: 30%;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 767px) {
+  .skill-card {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .skill-card {
+    width: 100%;
+  }
+}
+
+.grass-container-front {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 150%;
+  height: 250px;
+  background-image: url("../img/SVG/grass/grass_main_front.svg");
+  background-repeat: repeat-x;
+  background-size: 250px;
+  z-index: -1;
+  transition: bottom 0.6s ease-out;
+}
+
+.grass-container-middle {
+  position: fixed;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/SVG/grass/grass_main_center.svg");
+  transition: bottom 0.6s ease-out;
+  background-size: 200px;
+  background-repeat: repeat-x;
+}
+
+#back-grass {
+  position: fixed;
+  width: fit-content;
+  height: fit-content;
+  z-index: -3;
+}
+
+.grass-container-back {
+  position: fixed;
+  bottom: 200px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/SVG/grass/grass_main_back.svg");
+  transition: bottom 0.6s ease-out;
+  background-size: 150px;
+  background-repeat: repeat-x;
+}
+
+.grass-front-bg {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 150%;
+  height: 70px;
+  z-index: -1;
+  background-color: rgb(128, 185, 24);
+  transition: bottom 0.6s ease-out;
+}
+
+#middle-grass {
+  position: fixed;
+  width: fit-content;
+  height: fit-content;
+  z-index: -2;
+}
+
+.grass-middle-bg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(170, 204, 0);
+  transition: bottom 0.6s ease-out;
+}
+
+.grass-back-bg{
+   position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(212, 215, 0);
+  transition: bottom 0.6s ease-out;   
+}
+
+#inner-grass-main {
+  fill: rgba(128, 185, 24, 0.8);
+}
+
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
