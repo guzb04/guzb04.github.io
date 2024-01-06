@@ -1,0 +1,26 @@
+.project-cards {
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.project-card {
+  width: 40%;
+  height: 400px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 479px) {
+  .project-card {
+    width: 100%;
+  }
+}
+
+.project-card .card-body{
+    overflow-y: auto;
+}
