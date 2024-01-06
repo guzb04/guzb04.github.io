@@ -10,10 +10,9 @@
   height: 400px;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
+  cursor: pointer;
+  margin-top: 10px;
 }
-
-
 
 @media screen and (max-width: 479px) {
   .project-card {
@@ -21,6 +20,6 @@
   }
 }
 
-.project-card .card-body{
-    overflow-y: auto;
+.project-card .card-body {
+  overflow-y: auto;
 }

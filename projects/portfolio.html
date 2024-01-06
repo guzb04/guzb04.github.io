@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h1>guzb04</h1>
+      <div class="links">
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../certificates.html">Certificates</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="main-text">
+        <h1>Portfolio</h1>
+        <div class="row">
+          <img
+            src="../img/projects/portfolio.png"
+            class="project-big-image col-md-6 col-sm-12"
+          />
+          <p class="col-md-6 col-sm-12">
+            This project was originally a task for Jóvenes A Programar to get
+            comfortable with designing pages, but it did not age well as I made
+            the original one back when I was just learning CSS.
+          </p>
+          <p>
+            In January of 2024 I decided to make it again so I could show off my
+            new skills and practice some design.
+          </p>
+          <p>
+            All of the SVGs were obtained from public libraries under no
+            attribution license, I used bootstrap only for the card element and
+            col, but I also used some CSS media queries. The rest is all vanilla
+            HTML, JS and CSS so I can host on Github pages
+          </p>
+          <p>
+            Everything including animations was made by me using a custom Neovim config as my IDE except the SVG and
+            the Bootstrap card component.
+          </p>
+        </div>
+      </div>
+      <div class="project-links">
+        <h3>Links:</h3>
+        <p>
+          <a href="https://github.com/guzb04/guzb04.github.io">Github</a>
+        </p>
+        <p>
+          <a href="https://guzb04.github.io">Github pages</a>
+        </p>
+      </div>
+    </main>
+
+    <div class="sun"></div>
+
+    <div class="moon moon-transition"></div>
+
+    <div class="all-grass">
+      <div class="grass-container-front"></div>
+      <div class="grass-front-bg"></div>
+      <div id="middle-grass">
+        <div class="grass-container-middle"></div>
+        <div class="grass-middle-bg"></div>
+      </div>
+      <div id="back-grass">
+        <div class="grass-container-back"></div>
+        <div class="grass-back-bg"></div>
+      </div>
+    </div>
+
+    <script
+      src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/Background/background_scroll.js"></script>
+  </body>
+</html>
